@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.17.2",
+    "connect-multiparty": "^2.0.0",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.18.1",
+    "mongoose": "^4.12.4",
+    "mongoose-pagination": "^1.0.0",
+    "serve-favicon": "^2.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
