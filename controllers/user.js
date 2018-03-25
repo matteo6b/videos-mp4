@@ -80,7 +80,7 @@ exports.updateUser = (req,res) => {
       if(userId != req.user.sub ){
         return res.status(500).send({message:'no tienes permisos'})
       }
-      User.findByIdAndUpdate(userId,update, {new:true},(err,userUpdated) =>{
+      User.findByIdAndUpdate(userId,{$set:{name:update.name,surname:update.surname,email:update.email,image:update.image}, {new:true},(err,userUpdated) =>{
           if(err){
             res.status(500).send({message:"error al actualizar usuario"});
           }else{
